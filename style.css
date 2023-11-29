@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d67b5;
+    text-align: center;
+    font-family: Century, Verdana, Trebuchet;
+    position: sticky;
+    margin-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+header h1 {
+    font-size: 72;
+    padding-top: 24px;
+    color: white;
+  
+    
+}
+header img {
+    height: 70px;
+    width: 60px;
+    position: relative;
+    display: inline;
+    float:left;
+    left: 1%;
+}
+
+
+body {
+    background-color: #d2d3db;
+    height: 100%;
+}
+
+main {
+    height: 70%;
+}
+
+.nav {
+    display: inline-block;
+    padding: 2.4%;
+    padding-top: 1%;
+
+}
+
+.active {
+    border: 3px;
+    border-color: white;
+    background-color: #7D8597;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+#slideshow {
+    /* height may have to be changed for lab computers, if so use media query*/
+    height: 28em;
+    width: 92.5%;
+    background-color: #73B8FC;
+    margin: auto;
+    margin-bottom: 1%;
+    border: 3px;
+    border-color: #002B7A;
+    border-style: solid;
+    
+}
+
+.transitionb {
+    opacity: 25%;
+    height: 100px;
+    width: 50px;
+    background-color: #7D8597;
+    display: inline;
+    
+}
+
+.transitionb:hover {
+    opacity: 100%;
+    background-color: #7D8597;
+}
+
+#turtleImg {
+    height: 100%;
+    min-width: 100%;
+    
+   
+}
+
+.slideR {
+    animation: 0.5s reverse slideRight;
+    animation-delay: -0.15s;
+}
+
+.slideL {
+    animation: 0.75s  slideLeft;
+    animation-delay: -0.15s;
+}
+
+
+
+/**** Sourced from MDN *******/
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations#defining_the_animation_sequence_using_keyframes */
+
+@keyframes slideRight {
+    from {
+        margin-left: 100%;
+        width: 300%
+        
+    }
+
+    to {
+        margin-left: 0%;
+        width: 0%;
+      }
+}
+
+/*****************************/
+
+@keyframes slideLeft {
+    from {
+        position: relative;
+        right: 0%;
+        width: 100%;
+    }
+
+    to {
+        position: relative;
+        right: 100%;
+        width: 75%;
+      }
+}
+
+#leftb {
+    position: absolute;
+    top: 45%;
+    left: 4.3%;
+
+}
+
+#rightb {
+    position: absolute;
+    top: 45%;
+    right: 4.3%;
+}
+
+#overlay {
+    height:9.4em;
+    width:92.5%;
+    border:3px;
+    border-color: #33415C;
+    background-color:#33415C;
+    position: absolute;
+    top: 62.5%;
+    opacity: 30%;
+    
+}
+
+#overlay:hover {
+    opacity: 80%;
+}
+
+#slideshowText {
+    color: white;
+    font-family: Century, Verdana, Trebuchet;
+    float: left;
+    display: inline;
+    max-width: 80%;
+}
+
+#slideshowButton {
+    color: white;
+    font-family: Century, Verdana, Trebuchet;
+    background-color: dodgerblue;
+    float: right;
+    width: 12%;
+    height: 35%;
+    position: relative;
+    top: 30%;
+    right: 3%;
+    border-radius: 5px;
+    border-color: white;
+    font-size: large;
+}
+
+#intro {
+    height: 100%;
+    width: 75%;
+    border: 3px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: #87C2FD;
+    padding: 2%;
+    font-family: Century, Verdana, Trebuchet;
+    font-size: large;
+}
+
+#intro h2 {
+    text-align: center;
+}
+
+.branch {
+    height: 20em;
+    width: 28%;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: #33415C;
+    padding-top: 1%;
+    display: inline-block;
+    position: relative;
+    left: 1.5%;
+    text-align: center;
+}
+
+.homeTitle {
+    display: inline;
+    text-decoration: underline;
+    color: white;
+    font-family: Century, Verdana, Trebuchet;
+    text-align: center;
+}
+
+#meetTeamImg {
+    position: relative;
+    max-height: 60%;
+    width: 100%;
+    display: block;
+}
+
+#signatureImg {
+    position: relative;
+    max-height: 60%;
+    width: 100%;
+    display: block;
+}
+
+#donationImg {
+    position: relative;
+    max-height: 60%;
+    width: 100%;
+    display: block;
+}
+
+.homeOverlay {
+    height: 6.2em;
+    width: 100%;
+    padding-top: 2%;
+    margin: 0;
+    border:3px;
+    border-color: #33415C;
+    background-color:white;
+    position: relative;
+    opacity: 45%;
+    
+}
+
+.homeOverlay:hover {
+    opacity: 90%;
+}
+
+.homeText {
+    float: left;
+    display: inline;
+    position: relative;
+    width: 70%;
+    font-family: Century, Verdana, Trebuchet;
+}
+
+.homeButton {
+    height: 50%;
+    float: right;
+    display: inline;
+    position: relative;
+    top: 25%;
+    right: 5%;
+    font-family: Century, Verdana, Trebuchet;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    border-color: black;
+    font-size: large;
+    color: white;
+}
+
+
+footer {
+    background-color: #002B7A;
+    color: white;
+    text-align: center;
+    padding: 1.5%;
+    font-size: small;
+    font-family: Century, Verdana, Trebuchet;
+    height: 20%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    
+}
