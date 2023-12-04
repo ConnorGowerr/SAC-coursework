@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="transition.js" defer></script>
+    <script src="dom.js" defer></script> 
     <script src="https://kit.fontawesome.com/c39f89f710.js" crossorigin="anonymous"></script>
-    <script src="transition.js" defer></script>
+    <script src="dynamic-index.js" defer></script>
+   <!-- <script src="transition.js" defer></script> -->
 </head>
 <body>
 <header>
@@ -25,56 +26,8 @@
     </ul>
 </nav>
 </header>
-<main>
-    <article id="slideshow">
-        <img src="turtle.png" alt="turtle caught in a plastic bag" id="turtleImg"></img>
-        <button id="leftb" class="transitionb"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
-        <button id="rightb" class="transitionb"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
-        <section id="overlay">
-            <p id="slideshowText">Pellentesque non nisi eu eros malesuada hendrerit. Vestibulum luctus ex sed laoreet dapibus. Fusce lobortis faucibus metus fermentum ultricies. Sed vestibulum accumsan ultricies. Vestibulum mattis tellus eu semper dignissim. Aliquam erat volutpat. Pellentesque eros est, aliquet a nisi id, convallis elementum neque. Sed a aliquet mi. Fusce eu vulputate felis. Integer eget maximus leo. Suspendisse facilisis metus eget tincidunt fermentum. Praesent hendrerit maximus nunc, et convallis orci lacinia nec. Integer aliquam aliquam tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In ut nisi vitae nunc faucibus vehicula.</p>
-            <button id="slideshowButton">Find Out More</button>
-        </section>
-    </article>
-    <section id="intro">
-        <h2>Insert Title Here!</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem dolor, consectetur a aliquam ut, accumsan ut enim. Curabitur nec rutrum magna. Nunc a ipsum cursus, vestibulum ligula et, laoreet erat. Phasellus iaculis pretium tortor vel mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, diam vitae lobortis semper, turpis mauris bibendum sapien, eget bibendum diam lorem quis neque. Nullam rutrum pellentesque nibh, eget ornare magna viverra et. Ut pulvinar dui mauris, tempus fringilla diam pretium eu. Mauris in enim vitae metus convallis ultricies. Proin pellentesque bibendum purus porttitor maximus. Fusce dictum, dui sed blandit elementum, elit enim molestie nisl, id egestas lorem quam vitae nulla. Nunc lacinia tincidunt luctus.
-        </p>    
-        <p> 
-            Pellentesque non nisi eu eros malesuada hendrerit. Vestibulum luctus ex sed laoreet dapibus. Fusce lobortis faucibus metus fermentum ultricies. Sed vestibulum accumsan ultricies. Vestibulum mattis tellus eu semper dignissim. Aliquam erat volutpat. Pellentesque eros est, aliquet a nisi id, convallis elementum neque. Sed a aliquet mi. Fusce eu vulputate felis. Integer eget maximus leo. Suspendisse facilisis metus eget tincidunt fermentum. Praesent hendrerit maximus nunc, et convallis orci lacinia nec. Integer aliquam aliquam tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In ut nisi vitae nunc faucibus vehicula.
-        </p> 
-        <p>
-            Integer nec urna sodales, consectetur magna sed, vestibulum sapien. In bibendum faucibus dictum. Ut sagittis vel nulla non convallis. Quisque sagittis ac dui ac pulvinar. Maecenas eu tempus sem. Nullam id sem sit amet velit scelerisque blandit ut id tortor. Fusce vitae blandit enim. Etiam rhoncus, erat ac rutrum tristique, lorem tellus pharetra ligula, a faucibus dui nulla ac diam. Etiam ut eros nunc.
-        </p>
-    </section>
-    <article class="branch">
-        <h3 class="homeTitle">Meet the Team!</h3>
-        <i class="fa-solid fa-users-between-lines fa-xl" style="color: #ffffff;"></i>
-        <img src="cooporate.jpeg" alt="Group of people working together" id="meetTeamImg"></img>
-        <section id="homeOverlay1" class="homeOverlay">
-            <p class="homeText">Our dedicated team of employees strive for excellence in our planet, our society, our future.</p>
-            <b><button class="homeButton" id="homeButton1">Meet Us</button></b>
-        </section>
-    </article>
-    
-    <article class="branch">
-        <h3 class="homeTitle">Sign up Today</h3>
-        <i class="fa-solid fa-user-plus fa-xl" style="color: #ffffff;"></i>
-        <img src="signature.jpeg" alt="Person signing a contract" id="signatureImg"></img>
-        <section id="homeOverlay1" class="homeOverlay">
-            <p class="homeText">Sign up for our weekly newsleters to stay up to date with our latest findings.</p>
-            <b><button class="homeButton" id="homeButton2">Join Us</button></b>
-        </section>
-    </article>
-    <article class="branch" id="branch3">
-        <h3 class="homeTitle">Donate</h3>
-        <i class="fa-solid fa-hand-holding-dollar fa-xl" style="color: #ffffff;"></i>
-        <img src="donation.jpeg" alt="Person donating money" id="donationImg"></img>
-        <section id="homeOverlay1" class="homeOverlay">
-            <p class="homeText">Your support allows us to continue our life changing advancements. Be the change you want to see!</p>
-            <b><button class="homeButton" id="homeButton3">Help Us</button></b>
-        </section>
-    </article>
+<main id="main">
+
 </main>
 <footer>
     <p>Copyright ©2023 Sustainability Advisory Committee: <a href=mailto:sustainableadvisorycommittee@gmail.com> Connor Gower, Tawhid Islam, Christian Iannota</a></p>
